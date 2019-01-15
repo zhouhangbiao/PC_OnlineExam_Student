@@ -1,0 +1,135 @@
+.contentWrap {
+	padding: 10px 12px;
+	.stickyWrap {
+		:global {
+			.ant-affix {
+				width: 280px !important;
+				left: initial !important;
+				right: 0;
+			}
+		}
+	}
+	.answerTitleWrap {
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 16px;
+    :global {
+	    .u-btn {
+	      display: inline-block;
+	      padding: 0;
+	      text-align: center;
+	      width: 88px;
+	      height: 32px;
+	      line-height: 32px;
+	      & + .u-btn {
+	        margin-left: 16px;
+	      }
+	    }
+	    .btn-default {
+	      border: 1px solid #e6e6e6;
+	      color: #4d4d4d;
+        top: 1px;
+        position: relative;
+	      &:hover {
+	        color: #fff;
+	        background-color: #1890ff;
+	        border-color: #1890ff;
+	      }
+	    }
+	  }
+    .titleDesc {
+    	color: #1a1a1a;
+    }
+	}
+	.rightStickyWrap {
+    position: absolute;
+    right: 12px;
+    width: 280px;
+    height: 170px;
+    text-align: center;
+    box-shadow: -4px 4px 6px rgba(51, 51, 51, 0.15);
+    background-color: #fff;
+    &.hide{
+    	width: initial;
+    	height: initial;
+    }
+    .stickySwitchBtn {
+    	float: left;
+	    display: inline-block;
+	    width: 40px;
+	    height: 40px;
+	    background-color: #1383f2;
+	    color: #fff;
+	    line-height: 40px;
+	    cursor: pointer;
+    }
+    .hideDescWrap {
+    	display: none
+    }
+    .leftTimeWrap {
+      display: inline-block;
+	    height: 40px;
+	    width: 240px;
+	    line-height: 38px;
+	    text-align: center;
+	    background-color: #e6e6e6;
+	    font-size: 16px;
+	    color: #1a1a1a;
+	    .leftTime {
+	    	color: #fd3131;
+	    }
+    }
+    .firstLineDesc {
+    	margin-top: 22px;
+    	line-height: 1;
+    }
+    .secondLineDesc {
+    	margin-top: 10px;
+    	margin-bottom: 22px;
+    	line-height: 1;
+    }
+	}
+	.answerContentWrap {
+		margin-top: 10px;
+		padding: 10px;
+		background-color: #fff;
+		.questionTypeWrap {
+			margin-top: 10px;
+			.questionTypeDesc {
+				font-size: 16px;
+				color: #1a1a1a;
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.bottomWrap {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    height: 48px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .dashLine {
+	    position: relative;
+	    border-top: 1px dashed #808080;
+	    width: 100%;
+	    top: 16px;
+	    height: 1px;
+    }
+    .desc {
+    	height: 32px;
+	    width: 116px;
+	    margin: 0 auto;
+	    line-height: 32px;
+	    background-color: #f4f4f4;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    color: #4d4d4d;
+    }
+	}
+}

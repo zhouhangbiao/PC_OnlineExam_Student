@@ -1,0 +1,217 @@
+.questionsInfo {
+  margin-top: 10px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  :global {
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+      margin-left: 0;
+    }
+  };
+  &.multiGroupInfo {
+    border: none;
+  }
+  .infoHeader {
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 19px;
+    &.multiGroupInfoHeader {
+      border: 1px solid #e6e6e6;
+      margin-bottom: 10px;
+      .groupIndexWrap {
+        float: right;
+        .curIndex {
+          color: #fd7700;
+        }
+      }
+    }
+  }
+  .questionsCont {
+    min-height: 280px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e6e6e6;
+    .questionOptions {
+      display: block;
+      margin-top: 30px;
+      padding-left: 24px;
+      .option {
+        font-size: 16px;
+        color: #4d4d4d;
+        position: relative;
+        top: 2px;
+        &:first-child {
+          margin-right: 8px;
+        }
+      }
+    }
+    .operationDesc {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 144px;
+    }
+    .writingDesc {
+      display: inline-block;
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #fd3131;
+    }
+  }
+  .questionGroupDescWrap {
+    padding: 0;
+    border: 1px solid #e6e6e6;
+    font-size: 16px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    img {
+      max-width: 100%;
+      cursor: pointer;
+    }
+  }
+  .questionGroupBtnWrap {
+    padding: 10px 12px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    line-height: 16px;
+    .questionGroupBtn {
+      display: inline-block;
+      border: 1px solid #d9d9d9;
+      border-radius: 50%;
+      height: 19px;
+      width: 19px;
+      text-align: center;
+      margin-right: 4px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.answered {
+        border-color: transparent;
+        background-color: #1890ff;
+        color: #fff;
+      }
+      &.cur {
+        background-color: #fd7700;
+        border-color: transparent;
+        color: #fff;
+      }
+    }
+    .desc {
+      float: left;
+      line-height: 24px;
+      font-size: 16px;
+    }
+    .readAndFillBlankBtn {
+      display: block;
+      float: left;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+      height: 24px;
+      width: 24px;
+      text-align: center;
+      margin-right: 12px;
+      line-height: 22px;
+      font-size: 16px;
+      &.cur {
+        background-color: #fd7700;
+        border-color: transparent;
+        color: #fff;
+      }
+      &.answered {
+        background-color: #fd7700;
+        border-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+  .questionGroupOptionWrap {
+    padding: 12px 10px;
+    border: 1px solid #e6e6e6;
+    line-height: 16px;
+    &:after{
+      display: table;
+      clear: both;
+      content: '';
+    }
+    .leftSwitchWrap {
+      float: left;
+      cursor: pointer;
+      &:hover{
+        color: #1890ff;
+      }
+      &.limit {
+        cursor: not-allowed;
+        color: #b3b3b3;
+      }
+    }
+    .rightSwitchWrap {
+      float: right;
+      cursor: pointer;
+      &:hover{
+        color: #1890ff;
+      }
+      &.limit {
+        cursor: not-allowed;
+        color: #b3b3b3;
+      }
+    }
+    .switchGroupBtn {
+      text-align: center;
+      margin: 0 16px;
+      font-size: 24px;
+    }
+    .switchDesc {
+      display: block;
+      margin-top: 4px;
+      color: initial;
+      &.limit {
+        color: #b3b3b3;
+      }
+    }
+    .options {
+      margin-top: 9px;
+      text-align: center;
+      .option {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        line-height: 26px;
+        margin-left: 12px;
+        border: 1px solid #d9d9d9;
+        border-radius: 50%;
+        cursor: pointer;
+        &:first-child{
+          margin-left: 0;
+        }
+        &.cur {
+          border-color: transparent;
+          background-color: #1890ff;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.flexWrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  position: relative;
+  padding-bottom: 42px;
+}

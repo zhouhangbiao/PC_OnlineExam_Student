@@ -1,0 +1,121 @@
+.headerBox {
+  position: relative;
+  z-index: 2;
+  padding: 30px 14px;
+  padding-bottom: 0;
+  color: #fff;
+
+  .logo {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -10px;
+    vertical-align: middle;  
+    width: 60px;
+    height: 60px;
+  }
+  h2 {
+    margin-bottom: 0;
+    margin-top: -10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+  }
+  .h4 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .orderIndex {
+    margin-left: 6px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    line-height: 36px;
+    border-radius: 2px;
+    background: #fff;
+    font-size: 20px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.loginBox {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+  min-height: 400px;
+  text-align: center;
+  background: #0f60f3;
+  background: right, linear-gradient(#0f60f3, #3d86fa);
+
+  .login {
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    background: #fff;
+    border-radius: 2px;
+
+    h2 {
+      padding-top: 12px;
+      padding-bottom: 15px;
+      color: #1a1a1a;
+    }
+    .h3 {
+      font-size: 16px;
+    }
+  }
+  :global {
+    .ant-input {
+      height: 44px;
+    }
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      padding-left: 35px;
+      font-size: 16px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-form-item-control-wrapper {
+      height: 68px;
+      position: relative;
+    }
+    .ant-form-item-children {
+      .login-form-button {
+        margin-top: 5px;
+        width: 100%;
+        height: 44px;
+        font-size: 18px;
+      }
+    }
+    .anticon {
+      font-size: 20px;
+    }
+    .ant-input-affix-wrapper .ant-input-prefix {
+      left: 10px;
+    }
+    .has-error .ant-form-explain,
+    .has-error .ant-form-split {
+      position: absolute;
+      bottom: -21px;
+      left: 0;
+      padding-left: 10px;
+      text-align: left;
+    }
+  }
+}
+
+.loginModal {
+  :global {
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+      padding-left: 10px;
+    }
+  }
+}

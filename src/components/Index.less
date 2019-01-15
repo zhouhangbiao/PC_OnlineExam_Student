@@ -1,0 +1,81 @@
+.courseBox {
+  padding: 40px 20px 20px 20px;
+  position: relative;
+
+  .courseCard {
+    width: 420px;
+    margin-top: 38px;
+
+    &:first-child {
+      padding-right: 24px;
+    }
+    &:last-child {
+      padding-left: 24px;
+    }
+    .card {
+      padding: 24px;
+      border: 1px solid #e6e6e6;
+      background: #fff;
+      border-radius: 2px;
+      box-shadow: 0 4px 10px #e6e6e6;
+      p span {
+        display: inline-block;
+        width: 56px;
+        text-align: justify;
+        text-align-last: justify;
+      }
+
+      :global {
+        h2 {
+          position: relative;
+          color: #1a1a1a;
+          margin-bottom: 12px;
+          .h3 {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            color: #808080;
+          }
+        }
+      }
+    }
+    .cardFooter {
+      position: relative;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #e6e6e6;
+    }
+  }
+
+  .refresh {
+    position: absolute;
+    top: -24px;
+    right: 0;
+    border-color: #d9d9d9;
+    color: #1a1a1a;
+
+    &:hover,
+    &:focus {
+      color: #fff !important;
+      background: #1383f2 !important;
+      border-color: #1383f2 !important;
+    }
+    :global {
+      .anticon-sync {
+        font-weight: bold;
+      }
+    }
+  }
+  header {
+    h1 {
+      margin-bottom: 14px;
+    }
+  }
+  .tips {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 24px;
+    text-align: left;
+  }
+}

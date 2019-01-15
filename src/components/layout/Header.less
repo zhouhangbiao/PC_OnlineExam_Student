@@ -1,0 +1,63 @@
+@import "../../config/variable";
+.headerBox {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 5px 20px;
+  color: #fff;
+  background: @brand-primary;
+  box-shadow: 1px 4px 10px #dfdfdf;
+
+  //登录
+  .logo {
+    margin-right: 10px;
+  }
+  .orderIndex {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #fff;
+  }
+
+  //登录后
+  .personImg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff center;
+    background-size: contain;
+  }
+
+  .infos {
+    display: inline-block;
+    vertical-align: middle;
+
+    p {
+      margin: 0;
+
+      span {
+        i {
+          margin-left: 2px;
+        }
+        & + span {
+          margin-left: 20px;
+        }
+      }
+
+      & + p {
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .headerQuit {
+    line-height: 60px;
+
+    a {
+      color: #ffffff;
+    }
+  }
+}
